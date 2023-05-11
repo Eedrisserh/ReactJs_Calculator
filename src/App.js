@@ -3,6 +3,7 @@ import Display from './components/Display';
 import Operators from './components/Operators';
 import NumberButtons from './components/NumberButtons';
 import PunchButtons from './components/PunchButtons';
+import * as math from 'mathjs';
 
 function App() {
   const [calc, setCalc] = useState('');
@@ -24,9 +25,14 @@ function App() {
     setCalc(calc + value);
   };
 
-  const computeResult = () => {
-    setResult(eval(calc));
-  };
+const computeResult = () => {
+  try {
+    setResult(math.evaluate(calc));
+  } catch (error) {
+    setResult('Error');
+  }
+};
+
  
   return (
     <div className="App">
