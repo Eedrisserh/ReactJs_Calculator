@@ -1,0 +1,81 @@
+body {
+    background-color: white;
+}
+
+.App{
+    display: flex;
+    min-height: 99.7vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.calculator{
+    border: 2px solid rgb(22, 21, 21);
+    border-radius: 20px;
+    width:fit-content;
+    max-width: 50%;
+    min-height:fit-content;
+    padding: 10px;
+    background-color: rgb(145, 233, 245);
+    overflow:hidden;
+    box-shadow: 0px 0px 100px rgb(0, 0, 0);
+}
+
+.display{
+    padding: 0px;
+    text-align: right;
+    background-color: rgb(49, 48, 48);
+    color: white;
+    font-size: 45px;
+    font-weight: 400;
+    min-height: 10vh;
+}
+
+.display span {
+    font-size: 35px;
+    color: rgb(187, 170, 170);
+}
+.punch-buttons{
+    display: flex;
+}
+
+.punch-buttons button {
+    flex: 1 1 25%;
+    color: black;
+    font-weight:500;
+}
+button{
+    appearance: initial;
+    outline: none;
+    border: none;
+    color: rgb(127, 170, 170);
+    font-size: 50px;
+    padding: 20px;
+    cursor: pointer;
+    transition: 0.8s ease-in-out;
+}
+
+button:hover {
+    opacity: 0.3;
+}
+.operators {
+    display: flex;
+}
+.operators button{
+    flex: 1 1 25%;
+    color: black;
+    font-weight:500;
+    background-color:rgb(159, 231, 15);
+}
+
+.numbers{
+    display:flex;
+    flex-wrap:wrap;
+}
+
+.numbers button{
+    flex: 1 1 33.33%;
+    max-width: 33.33%;
+    background-color: rgb(20, 32, 70);
+    color: rgb(105, 243, 167);
+}
