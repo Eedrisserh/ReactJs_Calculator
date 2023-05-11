@@ -12,8 +12,8 @@ body {
 .calculator{
     border: 2px solid rgb(22, 21, 21);
     border-radius: 20px;
-    width:fit-content;
     max-width: 50%;
+    min-width: fit-content;
     min-height:fit-content;
     padding: 10px;
     background-color: rgb(145, 233, 245);
